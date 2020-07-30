@@ -1,0 +1,8 @@
+<a href="{% url 'newform' %}">글쓰기</a>
+
+{% for post in post %}
+<h1> {{post.title}} </h1>
+<img src="{{post.img.url}}" width="500">
+<p> {{post.body}} </p>
+<br><br>
+{% endfor %}
